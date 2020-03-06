@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900&display=swap');
+
+h1 {
+  color: black;
+  padding-top: 100px;
+  padding-left: 200px;
+  padding-right: 200px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight:900;
+  font-size: 7em;
+  line-height: 1em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h1:hover~#heart{
+  display: block;
+}
+
+h1:hover {
+  cursor: pointer;
+  color: #d13848;
+}
+
+#cut {
+  margin-top: 500px;
+  margin-bottom: 500px;
+}
+
+.crop-shapes {
+  width: 700px;
+  padding-left: 200px;
+  position: absolute;
+  height: 1000px;
+  object-fit: cover;
+}
+
+.twombly {
+  position: fixed;
+}
+
+svg {
+  width:100vw;
+}
+
+path {
+}
+
+svg:hover path{
+  transform-origin: center 50% 50%;
+  transition: transform 3s;
+  transform: scale(5);
+  pointer-events: none;
+}
+
+pattern {
+      position: fixed;
+    }
+
+
+
+#gradient-text{
+  background: linear-gradient(to right, crimson,pink,springgreen);
+  background-size: 200% 200%;
+  animation: rainbow 2s ease-in-out infinite;
+  background-clip: text;
+  -webkit-background-clip:text;
+  color:rgba(0,0,0,1);
+  width:80vw;
+  margin:auto;
+  display:block;
+  text-align:left;
+  transition: color .2s ease-in-out;
+  font-weight:900;
+}
+#gradient-text:hover{
+  color:rgba(0,0,0,0);
+}
+
+@keyframes rainbow {
+  0%{background-position:left}
+  50%{background-position:right}
+  100%{background-position:left}
+}
+
+
+
+
+
+
+
+/*
+@keyframes spin{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+
+#cycle{
+  display: none;
+  animation: spin 0.5s linear 0s infinite;
+  position: absolute;
+  left: 10px;
+  top: 40px;
+  animation-play-state: paused;
+}
+*/
+
+
+#gradient-text:hover~#background {
+  z-index: -999;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  font-family: "montserrat";
+  background-image: linear-gradient(125deg, #2c3e50, #8e44ad, #e67e22, #e74c3c, #16a085);
+  background-repeat: no-repeat;
+  background-size: 400%;
+  animation: bganimation 15s infinite;
+}
+
+
+@keyframes bganimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
