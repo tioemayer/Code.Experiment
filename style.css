@@ -12,6 +12,29 @@ h1 {
   text-transform: uppercase;
   margin: 0;
 }
+h1 {
+  margin: 0;
+  font-size: 100px;
+}
+
+#sw {
+width: 100vw;
+}
+
+.mix-blend-mode body {
+  /* only create background gradient if mix-blend-mode is supported; otherwise, default black text will remain ledgible against a plain white background */
+  color: black;
+}
+
+#hellooo{
+  color: black;
+  margin: 0;
+  mix-blend-mode: difference;
+  position : fixed;
+  top:  100px;
+
+}
+
 
 .button {
   position: relative;
@@ -21,9 +44,9 @@ h1 {
   width: 140px;
   border-radius: 50%;
   float: right;
-  top: 400px;
+  top: 300px;
   right: 50px;
-  bottom:10px;
+  bottom:50px;
   padding: 20px;
   text-align: center;
   text-decoration: none;
@@ -61,7 +84,7 @@ h1:hover {
   cursor: pointer;
   color: #d13848;
 }
-
+/*
 #cut {
   margin-top: 500px;
   margin-bottom: 500px;
@@ -97,7 +120,7 @@ pattern {
       position: fixed;
     }
 
-
+*/
 
 #gradient-text{
   background: linear-gradient(to right, crimson,pink,springgreen);
