@@ -2,6 +2,7 @@
 
 body {
   color: black;
+  margin: 0;
 }
 
 h1 {
@@ -35,10 +36,11 @@ width: 100vw;
   margin: 0;
   mix-blend-mode: difference;
   position : fixed;
-  top:  100px;
-
 }
 
+#bg {
+  background-color: blue;
+}
 
 .button {
   position: relative;
